@@ -2,17 +2,16 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faListUl, faPlus } from '@fortawesome/free-solid-svg-icons'
 
-import "./styles.css";
+import "./styles.scss";
+import { NavLink } from 'react-router-dom';
 
 export default function Menu() {
 
-    return (
-        <header>
-            <nav>
-                <a href="/listagem"><FontAwesomeIcon className="icon" icon={faListUl} />Lista de produtos</a>
-                <a href="/cadastro"><FontAwesomeIcon className="icon" icon={faPlus} />Cadastro</a>
-            </nav>
-            <img src=""></img>
-        </header>
-    )
+  return (
+    <nav>
+      <NavLink to="/listagem" activeClassName="active"><FontAwesomeIcon className="icon" icon={faListUl} />Produtos cadastrados</NavLink>
+      
+      <NavLink exact to="/cadastro" activeClassName="active"><FontAwesomeIcon className="icon" icon={faPlus} />Novo produto</NavLink>
+    </nav>
+  )
 }

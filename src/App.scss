@@ -3,18 +3,23 @@
     padding: 0;;
 }
 
-$main-color: #f3d083;
-
 body, html, #root {
     height: 100%;
-    background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
 }
 
 #root {
     display: flex;
-}
 
-.section {
-    background: red;
-    width: 50%;
+    .section-sidebar {
+        background: #f3d083;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .section-content {
+        padding: 3rem 5rem;
+        flex-grow: 2;
+        background: #f9f3e6;
+    }
 }
