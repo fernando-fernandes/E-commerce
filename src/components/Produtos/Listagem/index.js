@@ -1,6 +1,10 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import dao from '../../../services/dao';
 import Detalhes from '../Detalhes';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
+
+import './styles.scss';
 
 function Listagem() {
     const [produtos, setProdutos] = useState([]);
@@ -56,7 +60,6 @@ function Listagem() {
     },[])
 
     return <div>
-        <h2>Listagem de Produtos</h2>
         { !message && 
             <table>
                 <thead>
@@ -64,6 +67,7 @@ function Listagem() {
                         <th>SKU</th>
                         <th>Nome</th>
                         <th>Preço</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -72,7 +76,7 @@ function Listagem() {
                             <td>{produto.sku}</td>
                             <td>{produto.name}</td>
                             <td>{produto.price}</td>
-                            <td><button onClick={() => visualizarDetalhes(produto)} >Visualizar detalhes</button></td>
+                            <td><button onClick={() => visualizarDetalhes(produto)}><FontAwesomeIcon className="icon" icon={faEllipsisV} /></button></td>
                         </tr>
                     ))}
                 </tbody>
