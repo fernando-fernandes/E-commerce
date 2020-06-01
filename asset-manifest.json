@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/E-commerce/static/css/main.a3b4b9b1.chunk.css",
+    "main.js": "/E-commerce/static/js/main.70b96792.chunk.js",
+    "main.js.map": "/E-commerce/static/js/main.70b96792.chunk.js.map",
+    "runtime-main.js": "/E-commerce/static/js/runtime-main.9da57e73.js",
+    "runtime-main.js.map": "/E-commerce/static/js/runtime-main.9da57e73.js.map",
+    "static/js/2.91c05a12.chunk.js": "/E-commerce/static/js/2.91c05a12.chunk.js",
+    "static/js/2.91c05a12.chunk.js.map": "/E-commerce/static/js/2.91c05a12.chunk.js.map",
+    "index.html": "/E-commerce/index.html",
+    "precache-manifest.70beabc8d79308664acfe32e247abc1e.js": "/E-commerce/precache-manifest.70beabc8d79308664acfe32e247abc1e.js",
+    "service-worker.js": "/E-commerce/service-worker.js",
+    "static/css/main.a3b4b9b1.chunk.css.map": "/E-commerce/static/css/main.a3b4b9b1.chunk.css.map",
+    "static/js/2.91c05a12.chunk.js.LICENSE.txt": "/E-commerce/static/js/2.91c05a12.chunk.js.LICENSE.txt",
+    "static/media/Peter-Tarka.png": "/E-commerce/static/media/Peter-Tarka.ed5ab940.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9da57e73.js",
+    "static/js/2.91c05a12.chunk.js",
+    "static/css/main.a3b4b9b1.chunk.css",
+    "static/js/main.70b96792.chunk.js"
+  ]
+}
