@@ -1,9 +1,15 @@
 import React from 'react';
-import Cadastro from './components/Produtos/Cadastro';
-import Listagem from './components/Produtos/Listagem';
+import { BrowserRouter } from 'react-router-dom';
+import Menu from './components/Menu';
+import Routes from './routes'
 
 function App() {
-  return <Listagem />;
+  return (
+   <BrowserRouter>
+    <Menu />
+    <Routes />
+  </BrowserRouter>
+  );
 }
 
 export default App;
