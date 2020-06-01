@@ -12,6 +12,7 @@ export default function Menu() {
                 <a href="/listagem"><FontAwesomeIcon className="icon" icon={faListUl} />Lista de produtos</a>
                 <a href="/cadastro"><FontAwesomeIcon className="icon" icon={faPlus} />Cadastro</a>
             </nav>
+            <img src=""></img>
         </header>
     )
 }
