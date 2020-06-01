@@ -5,21 +5,55 @@
 
 body, html, #root {
     height: 100%;
+    overflow: hidden;
 }
 
 #root {
     display: flex;
+    background: #f9f3e6;
 
     .section-sidebar {
-        background: #f3d083;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        background: #f2cf81;
+        width: 26rem;
     }
 
     .section-content {
-        padding: 3rem 5rem;
+        padding: 3rem 4rem;
         flex-grow: 2;
-        background: #f9f3e6;
+        overflow-y: auto;
     }
 }
+
+@media only screen and (max-width : 1020px) {
+    #root {
+        .section-sidebar {
+            width: 24rem;
+        }
+    
+    }
+}
+
+
+@media only screen and (max-width : 996px) {
+    body, html, #root {
+        font-size: 13px;
+        overflow: auto;
+    }
+
+    #root {
+        flex-direction: column;
+
+        .section-content {
+            padding: 3rem;
+            overflow-y: initial;
+        }
+
+        .section-sidebar {
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+    }
+
+    
+}
+

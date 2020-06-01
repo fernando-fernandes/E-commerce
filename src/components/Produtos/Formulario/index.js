@@ -1,5 +1,12 @@
 import React, { useCallback, useState } from 'react';
-import { Form, Input, Textarea, Button, Span, MessageSpan, ErrorSpan, Div } from './styles'
+import { Form, Input, Textarea, Button, Span, MessageSpan, ErrorSpan, Div } from './styles';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faCheck } from '@fortawesome/free-solid-svg-icons';
+
+import ReactTooltip from "react-tooltip";
+
+import './styles.scss';
 
 function Formulario({operation, initialValue, backFunction, callBack}) {
 
@@ -177,13 +184,18 @@ return (
             </div>
         }
         {currentOperation!=='Visualizar' &&
-            <div>
+            <div className="container-icon">
                 <Button 
                     type="button"
-                    onClick={handleVoltar}>Voltar</Button>
+                    data-tip data-for="voltarLista"
+                    onClick={handleVoltar}><FontAwesomeIcon className="icon" icon={faArrowLeft} /></Button>
+                    <ReactTooltip id="voltarLista" place="right" type="light" effect="solid"><span className="tooltip">Voltar</span></ReactTooltip>
                 <Button 
                     type="button"
-                    onClick={handleConfirmar} default>Confirmar</Button>
+                    data-tip data-for="salvarCadastro"
+                    className="button-primary"
+                    onClick={handleConfirmar} default><FontAwesomeIcon className="icon" icon={faCheck} /></Button>
+                    <ReactTooltip id="salvarCadastro" place="left" type="light" effect="solid"><span className="tooltip">Salvar</span></ReactTooltip>
             </div>
         }
     </Form>

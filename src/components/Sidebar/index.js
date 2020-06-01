@@ -5,8 +5,10 @@ export default function Sidebar() {
 
   return (
     <div>
-      <h1>Projeto<br />E-Commerce<span>SENAC</span></h1>
-      <img src={require("./images/img.jpg")} alt="Ilustração" />
+      <h1>E-Commerce<span>SENAC</span></h1>
+      <a href="https://dribbble.com/tarka" target="_blank" rel="noopener noreferrer">
+        <img src={require("./images/Peter-Tarka.png")} alt="Ilustração" />
+      </a>
     </div>
   )
 

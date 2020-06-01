@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 
+
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     color: #876211;
-    padding: 0 2rem 0 3rem;
     font-size: 1.9em;
     font-weight: 300;
-    margin:  0 0 3rem;
+    margin:  3rem auto;
+    white-space: nowrap;
+    text-align: center;
 
     span {
         display: block;
@@ -18,4 +21,23 @@ h1 {
 
 img {
     display: block;
+    margin: 0 auto;
+    width: 100%;;
+}
+
+@media only screen and (max-width : 996px) {
+
+    h1 {
+        margin:  1.3rem auto;
+    }
+
+    img {
+        width: 12rem;
+        height: 12rem;
+        border-radius: 30rem;
+        margin-bottom: -6rem;
+        position: relative;
+        z-index: 9;
+        border: solid 3px #f9f3e6;
+    }
 }

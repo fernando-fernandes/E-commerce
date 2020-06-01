@@ -11,19 +11,22 @@
 nav {
     font-family: "Montserrat", sans-serif;
 
+    :first-of-type {
+        margin-right: 1.4rem;
+    }
+
     a {
         font-weight: 500;
         height: 2.5rem;
         display: inline-block;
-        margin-right: 1.4rem;
         line-height: 2.6;
-        padding: 0 1.5rem;
+        padding: 0 1.4rem;
         border-radius: 10rem;
         text-decoration: none;
         font-size: 1em;
         border: solid 1px #dfba6b;
         color: #4480bd;
-        transition: all 100ms ease-in-out;
+        transition: all 90ms ease-in-out;
 
         &:hover {
             @include active;
@@ -43,4 +46,12 @@ nav {
 
 .active {
     @include active;
+}
+
+
+@media only screen and (max-width : 996px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
 }

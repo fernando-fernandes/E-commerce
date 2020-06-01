@@ -1,7 +1,28 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
+
+const field = css`
+    padding: .5rem 1rem;
+    margin-top: 2rem;
+    border: none;
+    background: none;
+    border-bottom: 3px solid RGBA(243, 208, 131, .7);
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333;
+    transition: border 130ms ease-in;
+
+    :focus {
+        outline: none;
+        border-bottom: 3px solid #4480bd;
+    }
+
+    ::placeholder {
+        color: #aaa;
+    }
+`
 
 export const Form = styled.form`
-    max-width: 100%;
     display: flex;
     flex-direction: column;
 `;
@@ -10,8 +31,7 @@ export const Div = styled.div`
     width: 400px;
     display: flex;
     align-items: center;
-
-    font-family: 'Roboto', sans-serif;
+    background: red;
 `;
 
 export const Span = styled.span`
@@ -19,40 +39,18 @@ export const Span = styled.span`
 `;
 
 export const Input = styled.input`
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    border: 1px solid #b8b8b8;
-    :focus {
-        border: 1px solid #90a8de;
-        outline: none;
-    }
+    ${field}
 `;
 
 export const Textarea = styled.textarea`
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-
-    border: 1px solid #b8b8b8;
-    
-    :focus {
-        border: 1px solid #90a8de;
-        outline: none;
-    }
+    ${field}
+    resize: vertical;
+    max-height: 8rem;
+    height: 2rem;
 `;
 
 export const Button = styled.button`
-    height: 30px;
-    outline: nome;
-    background: #999;
-    border-radius: 5px;
-    margin-top: 10px;
-    border: 1px solid #888;
-
-    :hover {
-        background: #90a8de;
-    }
+   
 
 `;
 
