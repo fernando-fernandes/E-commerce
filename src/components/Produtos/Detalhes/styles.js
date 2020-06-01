@@ -15,4 +15,5 @@ export const Modal = styled.div`
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: RGBA(10, 10, 10, .3) 0 0 2.4rem -1rem;
+    z-index: 99;
 `;
