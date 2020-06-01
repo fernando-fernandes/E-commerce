@@ -13,5 +13,10 @@ body, html, #root {
 }
 
 #root {
-    
+    display: flex;
+}
+
+.section {
+    background: red;
+    width: 50%;
 }
