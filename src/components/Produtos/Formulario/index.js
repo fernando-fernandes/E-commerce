@@ -29,7 +29,7 @@ function Formulario({operation, initialValue, backFunction, callBack}) {
     const validEmptyFields = useCallback(() => {
         const invalidKeys = Object.keys(product).filter(key => !product[key])
         if(invalidKeys.length > 0) {
-            setResponseError(`Campos obrigatórios não preenchidos: ${invalidKeys.join(', ')}`)
+            setResponseError(`Campos obrigatórios: ${invalidKeys.join(', ')}`)
             const input = document.getElementsByName(invalidKeys[0])[0];
             input.focus();
             return false;
@@ -81,7 +81,7 @@ function Formulario({operation, initialValue, backFunction, callBack}) {
                 .then(() => {
                     if(currentOperation === 'Cadastrar') {
                         setProduct(initialValue);
-                        setMessage('Cadastro efetuado com sucesso!');
+                        setMessage('Produto cadastrado com sucesso!');
                         setTimeout(() => setMessage(null),5000);  
                     }
                     if(currentOperation === 'Editar') {

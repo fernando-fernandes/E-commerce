@@ -20,7 +20,7 @@ const dao = {
             this.getProducts()
                 .then((produtos) => {
                     if(produtos.find((prod) => prod.sku === produto.sku)) {
-                        reject("SKU já cadastrado!");
+                        reject("Este SKU já está cadastrado!");
                         return;
                     }
                     if(produtos){

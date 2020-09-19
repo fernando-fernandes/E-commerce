@@ -31,7 +31,6 @@ export const Div = styled.div`
     width: 400px;
     display: flex;
     align-items: center;
-    background: red;
 `;
 
 export const Span = styled.span`
